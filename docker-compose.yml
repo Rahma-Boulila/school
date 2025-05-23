@@ -32,13 +32,12 @@ services:
     stdin_open: true
     tty: true
 
-  
 
- app-studentdashboard-frontend:
+  app-studentdashboard-frontend:
     image: rahmaboulila/studentdashboard-image:1.0.0
     restart: on-failure
     ports:
-      - "8585:85"
+      - 8585:85
     depends_on:
       - app-school
 
